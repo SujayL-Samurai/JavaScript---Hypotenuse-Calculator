@@ -1,0 +1,56 @@
+hypotenuse ;
+
+c = Sqrt of (a square + b square)
+
+
+
+index.js;
+
+
+let a;
+let b;
+let c;
+
+
+document.getElementById("Submitbutton").onclick = function(){
+
+    a = document.getElementById("Atextbox").value;
+    a = Number(a);
+
+    b = document.getElementById("Btextbox").value;
+    b = Number(b);
+
+    c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2));
+
+    document.getElementById("CLabel").innerHTML = "Side C: " + c;
+
+}
+
+
+
+index.html;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <label id="ALabel">Side A:</label><br>
+    <input type="text" id="Atextbox">
+    <label id="BLabel">Side B:</label><br>
+    <input type="text" id="Btextbox">
+    <button type="submit" id="Submitbutton">Submit</button>
+    <label id="CLabel"></label><br>
+
+
+   
+    <script src="index.js"></script>
+
+</body>
+</html>
